@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main_0.c"
 
 /**
  * times_table - the function.
