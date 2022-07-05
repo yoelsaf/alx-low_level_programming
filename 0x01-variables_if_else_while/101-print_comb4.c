@@ -1,37 +1,39 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
-  * main - Prints 3 combination of numbers
-  *
-  * Return: Always (Success)
-  */
-int main(void)
+ * times_table -  a function that prints the 9 times table, starting with 0
+ * rone = row, cone = column, d = digits of current result
+ * Return: times table
+ * add extra space past single digit
+ */
+void times_table(void)
 {
-	int c, i, k;
+	int rone, cone, d;
 
-	for (c = '0'; c <= '9'; c++)
+	for (rone = 0; rone <= 9; rone++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (cone = 1; cone <= 9; cone++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			d = (rone * cone);
+			if ((d / 10) > 0)
 			{
-				if (c < i && i < k)
-				{
-					putchar(c);
-					putchar(i);
-					putchar(k);
+				_putchar((d / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+			_putchar((d % 10) + '0');
 
-					if (c != '7')
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+			if (cone < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
+		_putchar('\n');
 	}
 
-	putchar('\n');
-
-	return (0);
 }
