@@ -1,40 +1,39 @@
-/*
- * File: 101-print_comb4.c
- * Auth: Brennan D Baraban
- */
-
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * main - Prints all possible combinations of three different digits,
- *        in ascending order, separated by a comma followed by a space.
- *
- * Return: Always 0.
+ * times_table -  a function that prints the 9 times table, starting with 0
+ * rone = row, cone = column, d = digits of current result
+ * Return: times table
+ * add extra space past single digit
  */
-int main(void)
+void times_table(void)
 {
-int digit1, digit2, digit3;
+	int rone, cone, d;
 
-for (digit1 = 0; digit1 < 8; digit1++)
-{
-for (digit2 = digit1 + 1; digit2 < 9; digit2++)
-{
-for (digit3 = digit2 + 1; digit3 < 10; digit3++)
-{
-putchar((digit1 % 10) + '0');
-putchar((digit2 % 10) + '0');
-putchar((digit3 % 10) + '0');
+	for (rone = 0; rone <= 9; rone++)
+	{
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (cone = 1; cone <= 9; cone++)
+		{
+			d = (rone * cone);
+			if ((d / 10) > 0)
+			{
+				_putchar((d / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
+			_putchar((d % 10) + '0');
 
-if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-continue;
+			if (cone < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
 
-putchar(',');
-putchar(' ');
-}
-}
-}
-
-putchar('\n');
-
-return (0);
 }
