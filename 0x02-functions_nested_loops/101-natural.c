@@ -1,27 +1,21 @@
-/*
- * File: 101-natural.c
- * Auth: Brennan D Baraban
- */
-
 #include <stdio.h>
-
 /**
- * main - Lists all the natural numbers below 1024 (excluded)
- *        that are multiples of 3 or 5.
- *
- * Return: Always 0.
+ * main - prints the sum of all the multiples of 3 or 5 below 1024
+ * @void: void
+ * Return: 0 Success
  */
 int main(void)
 {
-	int i, sum = 0;
+	int n;
+	int sum = 0;
 
-	for (i = 0; i < 1024; i++)
+	for (n = 0; n < 1024; n++)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
+		if (n % 3 == 0 || n % 5 == 0)
+		{
+			sum += n;
+		}
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }

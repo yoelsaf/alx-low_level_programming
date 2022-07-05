@@ -1,19 +1,21 @@
-/*
- * File: 1-alphabet.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * print_alphabet - check the code for ALX School students.
+ *
+ * Return: Always 0.
  */
+
 void print_alphabet(void)
 {
-	char letter;
+	char alp = 'a';
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
+	while (alp <= 'z')
+	{
+		_putchar (alp);
+		alp++;
 
-	_putchar('\n');
+	}
+	_putchar ('\n');
+
 }
