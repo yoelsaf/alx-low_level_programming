@@ -79,5 +79,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
     n2 += n2_len - 1;
     *(r + size_r) = '\0';
 
-    return (add_strings(r));
+    return (add_strings(n1, n2, r, --size_r));
 }
