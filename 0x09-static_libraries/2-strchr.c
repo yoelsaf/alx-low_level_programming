@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <stddef.h>
 
 /**
  * _strchr - prints found c
