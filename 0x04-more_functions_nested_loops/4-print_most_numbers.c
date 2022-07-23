@@ -19,4 +19,7 @@ void print_most_numbers(void)
 	}
 	_putchar('\n');
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 48991ce9ff264f447afc7300b69fb90d4d8e6691

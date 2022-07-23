@@ -14,4 +14,7 @@ int _isupper(int c)
 	}
 	return (0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 48991ce9ff264f447afc7300b69fb90d4d8e6691

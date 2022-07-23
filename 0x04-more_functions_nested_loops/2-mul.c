@@ -11,4 +11,7 @@ int mul(int a, int b)
 {
 	return (a * b);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 48991ce9ff264f447afc7300b69fb90d4d8e6691
